@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-input" value="" disabled>
+
+        <div class="calculator-keys">
+            <button class="operator" value="+" onclick="islem('+')">+</button>
+            <button class="operator" value="-" onclick="islem('-')">-</button>
+            <button class="operator" value="*" onclick="islem('*')">&times;</button>
+            <button class="operator" value="/" onclick="islem('/')">&divide;</button>
+
+            <button type="button" value="7" onclick="sayıAl('7')">7</button>
+            <button type="button" value="8" onclick="sayıAl('8')">8</button>
+            <button type="button" value="9" onclick="sayıAl('9')">9</button>
+
+            <button type="button" value="4" onclick="sayıAl('4')">4</button>
+            <button type="button" value="5" onclick="sayıAl('5')">5</button>
+            <button type="button" value="6" onclick="sayıAl('6')">6</button>
+
+            <button type="button" value="1" onclick="sayıAl('1')">1</button>
+            <button type="button" value="2" onclick="sayıAl('2')">2</button>
+            <button type="button" value="3" onclick="sayıAl('3')">3</button>
+
+            <button type="button" value="0" onclick="sayıAl('0')">0</button>
+            <button type="button" class="decimal" value="." onclick="sayıAl('.')">.</button>
+            <button type="button" class="clear" value="clear" onclick="Temizle()">AC</button>
+
+            <button type="button" class="equal-sign operator" value="=" onclick="Hesapla()">=</button>
+        </div>
+    </div>
+</body>
+</html>
